@@ -9,23 +9,6 @@ API REST para gestión de tareas con autenticación JWT y caché Redis.
 - **Redis** - Caché
 - **JWT** - Autenticación
 
-## Instalación
-
-```bash
-# Crear entorno virtual
-python -m venv .venv
-source .venv/Scripts/activate  # Windows: .venv\Scripts\activate
-
-# Instalar dependencias
-pip install fastapi uvicorn sqlmodel python-jose[cryptography] pwdlib[argon2] python-multipart redis fastapi-cache python-dotenv
-
-# Iniciar Redis
-docker-compose -f compose.yml up -d
-
-# Ejecutar
-uvicorn app.main:app --reload
-```
-
 ## Endpoints
 
 ### Autenticación
